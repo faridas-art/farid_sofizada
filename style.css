@@ -535,6 +535,9 @@ section {
 .form-field {
     display: flex;
     flex-direction: column;
+
+    /* Allow grid items to shrink below their content width to prevent overflow */
+    min-width: 0;
 }
 
 .contact-form input,
@@ -546,6 +549,10 @@ section {
     font-size: 1rem;
     transition: all 0.3s ease;
     background: var(--background-color);
+
+    /* Ensure form controls fit their parent grid cell and include padding/border in width */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .contact-form input:focus,
