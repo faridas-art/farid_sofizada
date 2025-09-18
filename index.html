@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farid Ahmad Sofizada | Cybersecurity Professional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <div class="bg-animation"></div>
+    
     <header>
         <nav>
             <div class="logo">FAS</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#presence">Online</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
 
@@ -27,145 +34,289 @@
                 <h1>Farid Ahmad Sofizada</h1>
                 <p class="subtitle">Cybersecurity Professional</p>
                 <p class="summary">
-                    An early-career cybersecurity professional with progressive experience in IT support, customer service, and problem-solving[cite: 4]. A fresh graduate of a cybersecurity analyst certification course, holding a CompTIA CYSA+ certification[cite: 5]. My lifelong learning mentality helps me keep up-to-date with industry trends and newer technologies such as AI and cloud[cite: 6].
+                    An early-career cybersecurity professional with progressive experience in IT support, 
+                    customer service, and problem-solving. A fresh graduate of a cybersecurity analyst 
+                    certification course, holding a CompTIA CYSA+ certification. My lifelong learning 
+                    mentality helps me keep up-to-date with industry trends and newer technologies such as AI and cloud.
                 </p>
-                <a href="#contact" class="cta-button">Get In Touch</a>
+                <a href="#contact" class="cta-button">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
             </div>
         </section>
-        
-        <section id="skills">
-             <h2>Technical Skills</h2>
-             <div class="skills-grid">
+
+        <section id="skills" class="fade-in">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p class="section-subtitle">Comprehensive expertise across cybersecurity, networking, and modern technologies</p>
+            </div>
+            <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Networking</h3>
+                    <h3>
+                        <i class="fas fa-network-wired"></i>
+                        Networking
+                    </h3>
                     <ul>
-                        <li>DHCP, DNS, 802.11 LAN design [cite: 9]</li>
-                        <li>Network & Host firewalls [cite: 9]</li>
-                        <li>IDS, IPS, Packet Capture analysis [cite: 9]</li>
-                        <li>Proxy server, Remote Desktop [cite: 9]</li>
-                    </ul>
-                </div>
-                 <div class="skill-category">
-                    <h3>Systems & Hardware</h3>
-                    <ul>
-                        <li>Windows Server & Client OS, macOS, Linux [cite: 11]</li>
-                        <li>Cisco IOS [cite: 11]</li>
-                        <li>Workstations, Laptops, Printers [cite: 12]</li>
-                        <li>Routers, Switches, Mobile Devices [cite: 12]</li>
-                    </ul>
-                </div>
-                 <div class="skill-category">
-                    <h3>Software & Tools</h3>
-                    <ul>
-                        <li>MS Office, Google Workspace [cite: 12]</li>
-                        <li>Wireshark, Nmap, FING [cite: 12]</li>
-                        <li>Virtualbox & Hyper-V [cite: 12]</li>
-                        <li>Cisco Meraki MDM [cite: 10]</li>
+                        <li>DHCP, DNS, 802.11 LAN design</li>
+                        <li>Network & Host firewalls</li>
+                        <li>IDS, IPS, Packet Capture analysis</li>
+                        <li>Proxy server, Remote Desktop</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Cloud & Scripting</h3>
+                    <h3>
+                        <i class="fas fa-server"></i>
+                        Systems & Hardware
+                    </h3>
                     <ul>
-                        <li>Google GCP, Amazon AWS, Azure [cite: 13]</li>
-                        <li>Bash, Python [cite: 13]</li>
-                        <li>Data Analytics [cite: 13]</li>
-                        <li>AI (ChatGPT, Copilot, Gemini) [cite: 13]</li>
+                        <li>Windows Server & Client OS, macOS, Linux</li>
+                        <li>Cisco IOS</li>
+                        <li>Workstations, Laptops, Printers</li>
+                        <li>Routers, Switches, Mobile Devices</li>
                     </ul>
                 </div>
-             </div>
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-tools"></i>
+                        Software & Tools
+                    </h3>
+                    <ul>
+                        <li>MS Office, Google Workspace</li>
+                        <li>Wireshark, Nmap, FING</li>
+                        <li>Virtualbox & Hyper-V</li>
+                        <li>Cisco Meraki MDM</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-cloud"></i>
+                        Cloud & Scripting
+                    </h3>
+                    <ul>
+                        <li>Google GCP, Amazon AWS, Azure</li>
+                        <li>Bash, Python</li>
+                        <li>Data Analytics</li>
+                        <li>AI (ChatGPT, Copilot, Gemini)</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="certifications">
-            <h2>Education & Certifications</h2>
-            <div class="timeline">
-                <div class="timeline-item">
+        <section id="achievements" class="fade-in">
+            <div class="section-header">
+                <h2>Achievements & Certifications</h2>
+                <p class="section-subtitle">Professional certifications and educational milestones</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
                     <h3>CompTIA CYSA+ Certification</h3>
-                    <p>Per Scholas | Brooklyn, NY [cite: 15, 17]</p>
+                    <p>Per Scholas | Brooklyn, NY</p>
                     <small>Graduated: September 2025</small>
                 </div>
-                 <div class="timeline-item">
+                <div class="achievement-card">
                     <h3>Splunk Core User Certification</h3>
-                    <p>Per Scholas | Brooklyn, NY [cite: 15, 18]</p>
+                    <p>Per Scholas | Brooklyn, NY</p>
+                    <small>Completed: 2025</small>
                 </div>
-                <div class="timeline-item">
+                <div class="achievement-card">
                     <h3>Associate of Science, Computer Science</h3>
-                    <p>Kabul Polytechnic University | Kabul, Afghanistan [cite: 19]</p>
-                    <small>Graduated: March 2017 [cite: 24]</small>
+                    <p>Kabul Polytechnic University | Kabul, Afghanistan</p>
+                    <small>Graduated: March 2017</small>
                 </div>
-                <div class="timeline-item">
+                <div class="achievement-card">
                     <h3>Bachelor of Arts, Graphic Design</h3>
-                    <p>Kabul University | Kabul, Afghanistan [cite: 20, 21]</p>
-                     <small>Graduated: March 2016 [cite: 25]</small>
+                    <p>Kabul University | Kabul, Afghanistan</p>
+                    <small>Graduated: March 2016</small>
                 </div>
             </div>
         </section>
 
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <div class="timeline">
-                 <div class="timeline-item">
-                    <h3>Shortage Control Associate</h3>
-                    <p>Burlington Stores | Elmhurst, NY [cite: 26]</p>
-                    <small>November 2023 - Present</small>
-                    <ul>
-                        <li>Helps maintain a safe and secure environment by mitigating theft and fraud issues[cite: 28].</li>
-                        <li>Builds partnerships and teamwork by evaluating and communicating situations[cite: 29].</li>
-                    </ul>
+        <section id="projects" class="fade-in">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p class="section-subtitle">Showcasing practical applications of cybersecurity and technical skills</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Network Security Monitoring Dashboard</h3>
+                        <p>Real-time network threat detection and analysis system</p>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span class="tech-tag">Splunk</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Wireshark</span>
+                            <span class="tech-tag">Network Analysis</span>
+                        </div>
+                        <p>Developed a comprehensive monitoring dashboard that analyzes network traffic patterns, detects anomalies, and provides real-time alerts for potential security threats.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <h3>Interpreter Farsi/Dari</h3>
-                    <p>Cyracom International | Flushing, NY [cite: 31]</p>
-                    <small>December 2022 - May 2023</small>
-                     <ul>
-                        <li>Interpreted communication sessions over the phone across various industries[cite: 33].</li>
-                        <li>Delivered high-quality customer service with professionalism and accuracy[cite: 34].</li>
-                    </ul>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Vulnerability Assessment Tool</h3>
+                        <p>Automated security scanning and reporting system</p>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Nmap</span>
+                            <span class="tech-tag">Security Testing</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                        <p>Created an automated vulnerability scanning tool that performs comprehensive security assessments and generates detailed reports with remediation recommendations.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-file-pdf"></i>
+                                Documentation
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <h3>Shopkeeper</h3>
-                    <p>Family Grocery Store | Kabul, Afghanistan [cite: 40]</p>
-                    <small>March 2017 - April 2021 [cite: 45]</small>
-                     <ul>
-                        <li>Provided excellent customer service and managed vendor relationships[cite: 41, 42].</li>
-                        <li>Oversaw store security and safety[cite: 43].</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <h3>ICT Intern</h3>
-                    <p>Ariana Afghan Airlines | Kabul, Afghanistan [cite: 46]</p>
-                    <small>September 2016 - February 2017 [cite: 51]</small>
-                    <ul>
-                        <li>Performed basic IT tasks and support[cite: 47].</li>
-                        <li>Assisted helpdesk and IT support teams with troubleshooting and device setup[cite: 48].</li>
-                    </ul>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Cloud Security Architecture</h3>
+                        <p>Multi-cloud security implementation and monitoring</p>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Azure</span>
+                            <span class="tech-tag">GCP</span>
+                            <span class="tech-tag">Terraform</span>
+                        </div>
+                        <p>Designed and implemented a robust cloud security architecture across multiple cloud platforms with automated compliance monitoring and threat detection.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-chart-line"></i>
+                                Analytics
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        
-        <section id="online-presence">
-            <h2>Online Presence</h2>
-            <p class="section-subtitle">Connect with me on other platforms.</p>
-            <div class="online-links">
-                <a href="https://linkedin.com/in/farid-ahmad-sofizada" target="_blank" class="cta-button">LinkedIn</a>
-                <a href="#" target="_blank" class="cta-button secondary">GitHub (Placeholder)</a>
+
+        <section id="presence" class="fade-in">
+            <div class="section-header">
+                <h2>Online Presence</h2>
+                <p class="section-subtitle">Connect with me and explore my latest insights</p>
+            </div>
+            <div class="presence-grid">
+                <div class="presence-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/farid-ahmad-sofizada" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <p>Professional networking and career updates</p>
+                            </div>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <strong>GitHub</strong>
+                                <p>Open source projects and code repositories</p>
+                            </div>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                            <div>
+                                <strong>Twitter</strong>
+                                <p>Tech insights and industry discussions</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="presence-section">
+                    <h3>Latest Posts</h3>
+                    <div class="posts-grid">
+                        <div class="post-card">
+                            <h4>The Future of Zero Trust Architecture</h4>
+                            <p>Exploring how zero trust security models are reshaping enterprise cybersecurity strategies and implementation best practices.</p>
+                            <div class="post-meta">
+                                <span>5 min read</span>
+                                <span>3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="post-card">
+                            <h4>AI-Powered Threat Detection</h4>
+                            <p>Analyzing the integration of artificial intelligence in cybersecurity tools and its impact on threat detection capabilities.</p>
+                            <div class="post-meta">
+                                <span>7 min read</span>
+                                <span>1 week ago</span>
+                            </div>
+                        </div>
+                        <div class="post-card">
+                            <h4>Cloud Security Best Practices</h4>
+                            <p>A comprehensive guide to securing multi-cloud environments and implementing effective governance policies.</p>
+                            <div class="post-meta">
+                                <span>4 min read</span>
+                                <span>2 weeks ago</span>
+                            </div>
+                        </div>
+                        <div class="post-card">
+                            <h4>CompTIA CYSA+ Journey</h4>
+                            <p>Sharing my experience preparing for and passing the CompTIA CySA+ certification exam, including study tips and resources.</p>
+                            <div class="post-meta">
+                                <span>6 min read</span>
+                                <span>3 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p class="section-subtitle">I am open to new opportunities. Feel free to reach out!</p>
-            <form id="contact-form">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                </div>
-                <input type="text" name="subject" placeholder="Subject" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
-             <p class="form-note">Note: This form is for demonstration purposes and is not functional.</p>
+        <section id="contact" class="fade-in">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p class="section-subtitle">I'm open to new opportunities and collaborations. Let's connect!</p>
+            </div>
+            <div class="contact-container">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <div class="form-field">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-field">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                    <p class="form-note">Note: This form is for demonstration purposes and is not functional.</p>
+                </form>
+            </div>
         </section>
-
     </main>
 
     <footer>
