@@ -189,6 +189,7 @@ section {
 .cta-button {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     background: var(--gradient-primary);
     color: white;
@@ -201,6 +202,14 @@ section {
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Hero CTA Button - Different styling for hero section */
+.hero .cta-button {
+    width: auto;
+    display: inline-flex;
 }
 
 .cta-button:hover {
@@ -529,16 +538,26 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
 }
 
 .form-field {
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.form-group .form-field {
+    margin-bottom: 1.5rem;
+}
+
+.form-field:not(.form-group .form-field) {
+    margin-bottom: 1.5rem;
 }
 
 .contact-form input,
 .contact-form textarea {
+    width: 100%;
     padding: 1rem 1.5rem;
     border: 2px solid var(--border-color);
     border-radius: 10px;
@@ -546,6 +565,7 @@ section {
     font-size: 1rem;
     transition: all 0.3s ease;
     background: var(--background-color);
+    box-sizing: border-box;
 }
 
 .contact-form input:focus,
@@ -571,6 +591,8 @@ section {
     background: rgba(59, 130, 246, 0.1);
     border: 1px solid rgba(59, 130, 246, 0.2);
     font-size: 0.9rem;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .form-status .status-text {
@@ -599,6 +621,7 @@ section {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    justify-content: center;
     text-align: center;
     margin-top: 1rem;
     font-size: 0.85rem;
@@ -607,7 +630,8 @@ section {
     background: rgba(16, 185, 129, 0.1);
     border-radius: 8px;
     border: 1px solid rgba(16, 185, 129, 0.2);
-    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .form-note i {
@@ -627,14 +651,16 @@ section {
     box-shadow: var(--shadow-lg);
 }
 
-/* Enhanced Form Field Validation */
-.contact-form input:invalid,
-.contact-form textarea:invalid {
+/* Enhanced Form Field Validation - Only show validation colors when focused/interacted */
+.contact-form input:focus:invalid,
+.contact-form textarea:focus:invalid {
     border-color: #ef4444;
 }
 
-.contact-form input:valid,
-.contact-form textarea:valid {
+.contact-form input:focus:valid,
+.contact-form textarea:focus:valid,
+.contact-form input.valid,
+.contact-form textarea.valid {
     border-color: #10b981;
 }
 
@@ -663,6 +689,8 @@ section {
     padding: 0.5rem;
     background: rgba(0, 0, 0, 0.02);
     border-radius: 6px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .recaptcha-notice a {
