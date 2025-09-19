@@ -186,6 +186,11 @@ section {
     margin-right: auto;
 }
 
+.summary:last-child {
+    margin-bottom: 3rem;
+}
+
+/* CTA Button Base Styles */
 .cta-button {
     display: inline-flex;
     align-items: center;
@@ -202,14 +207,6 @@ section {
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Hero CTA Button - Different styling for hero section */
-.hero .cta-button {
-    width: auto;
-    display: inline-flex;
 }
 
 .cta-button:hover {
@@ -521,7 +518,10 @@ section {
     color: var(--text-secondary);
 }
 
-/* Contact Section */
+/* ============================================================================
+   CONTACT SECTION - CLEAN FORM STYLING
+   ============================================================================ */
+
 .contact-container {
     max-width: 600px;
     margin: 0 auto;
@@ -534,30 +534,23 @@ section {
     box-shadow: var(--shadow-lg);
 }
 
+/* Form Groups */
 .form-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
 }
 
+/* Individual Form Fields */
 .form-field {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
-.form-group .form-field {
-    margin-bottom: 1.5rem;
-}
-
-.form-field:not(.form-group .form-field) {
-    margin-bottom: 1.5rem;
-}
-
+/* Form Inputs - Clean Default Styling */
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
     padding: 1rem 1.5rem;
     border: 2px solid var(--border-color);
     border-radius: 10px;
@@ -565,24 +558,40 @@ section {
     font-size: 1rem;
     transition: all 0.3s ease;
     background: var(--background-color);
+    width: 100%;
     box-sizing: border-box;
 }
 
+/* Focus States Only */
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--primary-color);
     background: white;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
 }
 
+/* Textarea Specific */
 .contact-form textarea {
     resize: vertical;
     min-height: 120px;
+    font-family: inherit;
 }
 
-/* Form Status Styling */
+/* Single Field Containers (Subject and Message) */
+.contact-form .form-field:not(.form-group .form-field) {
+    margin-bottom: 1.5rem;
+}
+
+/* Submit Button - Full Width in Form */
+.contact-form .cta-button {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Form Status Messages */
 .form-status {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 0.75rem;
     padding: 1rem;
@@ -591,8 +600,8 @@ section {
     background: rgba(59, 130, 246, 0.1);
     border: 1px solid rgba(59, 130, 246, 0.2);
     font-size: 0.9rem;
-    box-sizing: border-box;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .form-status .status-text {
@@ -616,12 +625,12 @@ section {
     100% { transform: rotate(360deg); }
 }
 
-/* Form Security Note Styling */
+/* Security Note */
 .form-note {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     justify-content: center;
+    gap: 0.5rem;
     text-align: center;
     margin-top: 1rem;
     font-size: 0.85rem;
@@ -630,13 +639,35 @@ section {
     background: rgba(16, 185, 129, 0.1);
     border-radius: 8px;
     border: 1px solid rgba(16, 185, 129, 0.2);
-    box-sizing: border-box;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .form-note i {
     color: #10b981;
     font-size: 0.9rem;
+}
+
+/* reCAPTCHA Privacy Notice */
+.recaptcha-notice {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.recaptcha-notice a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.recaptcha-notice a:hover {
+    text-decoration: underline;
 }
 
 /* Disabled Button State */
@@ -649,19 +680,6 @@ section {
 .cta-button:disabled:hover {
     transform: none !important;
     box-shadow: var(--shadow-lg);
-}
-
-/* Enhanced Form Field Validation - Only show validation colors when focused/interacted */
-.contact-form input:focus:invalid,
-.contact-form textarea:focus:invalid {
-    border-color: #ef4444;
-}
-
-.contact-form input:focus:valid,
-.contact-form textarea:focus:valid,
-.contact-form input.valid,
-.contact-form textarea.valid {
-    border-color: #10b981;
 }
 
 /* Success/Error Status Variants */
@@ -678,28 +696,6 @@ section {
 .form-status.warning {
     background: rgba(245, 158, 11, 0.1);
     border-color: rgba(245, 158, 11, 0.2);
-}
-
-/* reCAPTCHA Privacy Notice */
-.recaptcha-notice {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    text-align: center;
-    margin-top: 0.5rem;
-    padding: 0.5rem;
-    background: rgba(0, 0, 0, 0.02);
-    border-radius: 6px;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.recaptcha-notice a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.recaptcha-notice a:hover {
-    text-decoration: underline;
 }
 
 /* Footer */
@@ -734,7 +730,10 @@ footer {
     transform: translateY(0);
 }
 
-/* Responsive Design */
+/* ============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================ */
+
 @media (max-width: 768px) {
     .mobile-menu-btn {
         display: block;
@@ -761,8 +760,14 @@ footer {
         padding: 3rem 1rem;
     }
 
+    /* Form responsive adjustments */
     .form-group {
         grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-form {
+        padding: 2rem;
     }
 
     .presence-grid {
@@ -787,10 +792,6 @@ footer {
 
     .section-header h2 {
         font-size: 2rem;
-    }
-
-    .contact-form {
-        padding: 2rem;
     }
 
     .project-header {
@@ -862,7 +863,7 @@ footer {
     }
 }
 
-/* Optional: Custom reCAPTCHA badge positioning */
+/* reCAPTCHA badge positioning */
 .grecaptcha-badge {
     z-index: 999 !important;
 }
