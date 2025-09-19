@@ -369,7 +369,7 @@ function initializeSmoothScrolling() {
 
     navLinkItems.forEach(link => {
         link.addEventListener('click', function(e) {
-            if (this.getAttribute('target') === '_blank' || !this.getAttribute('href').startsWith('#')) {
+            if (this.getAttribute('target') === '_blank' || !this.getAttribute('href') || !this.getAttribute('href').startsWith('#')) {
                 return;
             }
 
