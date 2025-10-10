@@ -867,3 +867,21 @@ footer {
 .grecaptcha-badge {
     z-index: 999 !important;
 }
+
+/* Styles for the new logo with image */
+ .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff; /* Assuming the logo text is white */
+ }
+
+ .logo-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; /* Makes the image a circle */
+            margin-right: 12px; /* Adds space between the image and text */
+            object-fit: cover; /* Prevents the image from being distorted */
+            border: 2px solid #fff; /* Optional: adds a white border around the image */
+        }
