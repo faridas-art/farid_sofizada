@@ -11,13 +11,36 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     
     <script src="https://www.google.com/recaptcha/api.js?render=6LeUFs4rAAAAAJ2VJGrd_-j280dmTeWZWQwMsTTb"></script>
+
+    <style>
+        /* Styles for the new logo with image */
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff; /* Assuming the logo text is white */
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; /* Makes the image a circle */
+            margin-right: 12px; /* Adds space between the image and text */
+            object-fit: cover; /* Prevents the image from being distorted */
+            border: 2px solid #fff; /* Optional: adds a white border around the image */
+        }
+    </style>
 </head>
 <body>
     <div class="bg-animation"></div>
     
     <header>
         <nav>
-            <div class="logo">FAS</div>
+            <div class="logo">
+                <img src="IMG-5230-2.jpg" alt="Profile Picture" class="logo-img">
+                <span>Farid's Portfolio</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -137,7 +160,11 @@
                     <p>Kabul Polytechnic University | Kabul, Afghanistan</p>
                     <small>Graduated: March 2017</small>
                 </div>
-                
+                <div class="achievement-card">
+                    <h3>Bachelor of Arts, Graphic Design</h3>
+                    <p>Kabul University | Kabul, Afghanistan</p>
+                    <small>Graduated: March 2016</small>
+                </div>
             </div>
         </section>
 
@@ -174,33 +201,8 @@
                 </div>
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Noise Deflector Engine (NDE) </h3>
-                        <p>Helps cybersecurity professionals grab the signal among the noise</p>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tech">
-                            <span class="tech-tag">Web Development</span>
-                            <span class="tech-tag">Responsive Design</span>
-                            <span class="tech-tag">IT Services</span>
-                            <span class="tech-tag">UI/UX</span>
-                        </div>
-                        <p>Helps in quick detection and separation of potentially malicious IP addresses from the general benign ones leaving the analyst with ~85% less ip addresses to work with.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>
-                                Code (Private)
-                            </a>
-                            <a href="https://nde-project.onrender.com/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Tech News Aggregator</h3>
-                        <p>A real-time feed of the latest Tech news and articles.</p>
+                        <h3>Cyber News Aggregator</h3>
+                        <p>A real-time feed of the latest cybersecurity news and articles.</p>
                     </div>
                     <div class="project-content">
                         <div class="project-tech">
@@ -209,7 +211,7 @@
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
                         </div>
-                        <p>A dynamic web application that aggregates technology news from multiple sources using an API. Features a clean interface with search capabilities to keep users informed on emerging events.</p>
+                        <p>A dynamic web application that aggregates cybersecurity news from multiple sources using an API. Features a clean interface with search capabilities to keep users informed on emerging threats.</p>
                         <div class="project-links">
                             <a href="https://github.com/faridas-art/cyber_news_repo" class="project-link" target="_blank">
                                 <i class="fab fa-github"></i>
@@ -222,7 +224,31 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Network & Data Experts (NDE) Website</h3>
+                        <p>A professional website for a fictional IT solutions provider.</p>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span class="tech-tag">Web Development</span>
+                            <span class="tech-tag">Responsive Design</span>
+                            <span class="tech-tag">IT Services</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                        <p>Developed a professional, multi-page website for 'Network & Data Experts.' The site showcases services like network design, data management, and cybersecurity consulting with a responsive design.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code (Private)
+                            </a>
+                            <a href="https://nde-project.onrender.com/" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -256,13 +282,6 @@
                                 <p>Tech insights and industry discussions</p>
                             </div>
                         </a>
-                        <a href="#contact" class="social-link">
-                            <i class="fab fa-email"></i>
-                            <div>
-                                <strong>Email</strong>
-                                <p>Direct contact for inquiries</p>
-                            </div>
-                        </a>
                     </div>
                 </div>
                 <div class="presence-section">
@@ -284,7 +303,7 @@
         <section id="contact" class="fade-in">
             <div class="section-header">
                 <h2>Get In Touch</h2>
-                <p class="section-subtitle">Any enquiries? Let's connect! I will email you back in no time.</p>
+                <p class="section-subtitle">I'm open to new opportunities and collaborations. Let's connect!</p>
             </div>
             <div class="contact-container">
                 <form class="contact-form" id="contact-form">
